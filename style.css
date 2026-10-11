@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #111;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #232f3e;
+    padding: 12px 20px;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.hero {
+    background-color: #e7f0f8;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.hero-content p:first-child {
+    color: #c45500;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.hero button {
+    background-color: #ff9900;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero button:hover {
+    background-color: #e68a00;
+}
+
+
+/* =========================
+   CATEGORY SECTION
+========================= */
+
+.categories {
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.categories h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.category {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.category div {
+    font-size: 40px;
+}
+
+.category h3 {
+    margin: 10px 0 5px;
+}
+
+.category p {
+    color: #555555;
+    font-size: 14px;
+}
+
+
+.product-grid {
+    display: grid;
+
+    /* 4 products side by side */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+
+    min-height: 420px;
+
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 3px 10px rgba(88, 7, 216, 0.2);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-image {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.product-image img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+}
+
+
+.product-card h3 {
+    font-size: 18px;
+    min-height: 45px;
+    margin: 10px 0;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.rating {
+    color: #f0a500;
+    font-size: 14px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.old-price {
+    color: #777;
+    text-decoration: line-through;
+    display: inline;
+    margin-right: 8px;
+}
+
+.discount {
+    color: #cc0000;
+    font-weight: bold;
+    display: inline;
+}
+.add-cart {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-cart:hover {
+    background-color: #f7ca00;
+}
+
+@media (max-width: 1000px) {
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 450px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+

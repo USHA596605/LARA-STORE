@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LARA STORE</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+    <style>
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.product-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+    <button>☰ All</button>
+
+    <a href="#">Best Sellers</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Electronics</a>
+    <a href="#">Fashion</a>
+    <a href="#">Home</a>
+    <a href="#">Books</a>
+    <a href="#">Sports</a>
+    <div class="logo">
+        LARA STORE
+    </div>
+
+    <div class="location">
+        <small>Deliver to</small>
+        <strong>Hyderabad</strong>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search products">
+        <button>Search</button>
+    </div>
+
+    <div class="language">
+        EN
+    </div>
+
+    <div class="account">
+        <small>Hello, Sign in</small>
+        <strong>Account & Lists</strong>
+    </div>
+
+    <div class="orders">
+        <small>Returns</small>
+        <strong>& Orders</strong>
+    </div>
+
+    <div class="cart">
+        🛒 Cart
+    </div>
+
+</header>
+
+</nav>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p>BIG SAVINGS</p>
+
+        <h1>
+            Discover Amazing Deals
+        </h1>
+
+        <p>
+            Shop electronics, fashion, home essentials and more.
+        </p>
+
+        <button>
+            Shop Now
+        </button>
+
+    </div>
+
+</section>
+<section class="categories">
+
+    <h2>Shop by Category</h2>
+
+    <div class="category-container">
+
+        <div class="category">
+            <div>🎧</div>
+            <h3>Electronics</h3>
+            <p>Gadgets & Accessories</p>
+        </div>
+
+        <div class="category">
+            <div>👟</div>
+            <h3>Fashion</h3>
+            <p>Latest Styles</p>
+        </div>
+
+        <div class="category">
+            <div>🏠</div>
+            <h3>Home</h3>
+            <p>Home Essentials</p>
+        </div>
+
+        <div class="category">
+            <div>✨</div>
+            <h3>Beauty</h3>
+            <p>Beauty Products</p>
+        </div>
+
+        <div class="category">
+            <div>📱</div>
+            <h3>Mobiles</h3>
+            <p>Smartphones</p>
+        </div>
+
+        <div class="category">
+            <div>📚</div>
+            <h3>Books</h3>
+            <p>Books & Learning</p>
+        </div>
+
+        <div class="category">
+            <div>🏸</div>
+            <h3>Sports</h3>
+            <p>Sports Equipment</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="products-section">
+
+    <div class="products-header">
+        <h2>Today's Best Deals</h2>
+
+        <div class="sort-container">
+            <label for="sort-products">Sort By:</label>
+
+            <select id="sort-products">
+                <option value="default">Default</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+            </select>
+        </div>
+    </div> 
+
+    <div class="product-grid"></div>
+    <!-- 1. Wired Earphones -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/wired earphones.jpg" alt=images/wired earphones.jpg" width="100" height ="100">
+        </div>
+        <h3>Wired Earphones</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.3</p>
+        <p class="price">₹499</p>
+        <p class="old-price">₹799</p>
+        <p class="discount">38% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 2. AeroBeat Wireless Headphones -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/ear headphones.avif" alt="ear headphones.avif" width="100" height ="100">
+        </div>
+        <h3>AeroBeat Wireless Headphones</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.5</p>
+        <p class="price">₹1,899</p>
+        <p class="old-price">₹2,999</p>
+        <p class="discount">37% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 3. PulseFit Smart Watch -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/smartwatch.avif" alt="smartwatch.avif" width="100" height ="100">
+        </div>
+        <h3>PulseFit Smart Watch</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.3</p>
+        <p class="price">₹2,499</p>
+        <p class="old-price">₹3,999</p>
+        <p class="discount">38% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 4. UrbanStride Running Shoes -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/running shoes.webp" alt="running shoes.webp" width="100" height ="100">
+        </div>
+        <h3>UrbanStride Running Shoes</h3>
+        <p class="rating">⭐⭐⭐⭐⭐ 4.6</p>
+        <p class="price">₹1,599</p>
+        <p class="old-price">₹2,499</p>
+        <p class="discount">36% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 5. Canvas Backpack -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/bagpack.webp" alt="bagpack.webp" width="100" height ="100">
+        </div>
+        <h3>Canvas Backpack</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.4</p>
+        <p class="price">₹899</p>
+        <p class="old-price">₹1,499</p>
+        <p class="discount">40% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 6. Electric Kettle -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/electric kettle.webp" alt="electric kettle.webp" width="100" height ="100">
+        </div>
+        <h3>Electric Kettle</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.2</p>
+        <p class="price">₹1,199</p>
+        <p class="old-price">₹1,999</p>
+        <p class="discount">40% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 7. Cushion Set -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/cushion-set.avif" alt="cushion-set.avif" width="100" height ="100">
+        </div>
+        <h3>Cushion Set</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.3</p>
+        <p class="price">₹699</p>
+        <p class="old-price">₹1,199</p>
+        <p class="discount">42% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 8. Face Care Kit -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/face-care-kit.webp" alt="face-care-kit.webp" width="100" height ="100">
+        </div>
+        <h3>Face Care Kit</h3>
+        <p class="rating">⭐⭐⭐⭐⭐ 4.5</p>
+        <p class="price">₹799</p>
+        <p class="old-price">₹1,299</p>
+        <p class="discount">38% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 9. Nova X5 Smartphone -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/smartphone.jpg" alt="smartphone.jpg" width="100" height ="100">
+        </div>
+        <h3>Nova X5 Smartphone</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.4</p>
+        <p class="price">₹14,999</p>
+        <p class="old-price">₹18,999</p>
+        <p class="discount">21% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 10. Study Planner -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/study-planner.jpg" alt="study-planner.jpg" width="100" height ="100">
+        </div>
+        <h3>Study Planner</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.3</p>
+        <p class="price">₹299</p>
+        <p class="old-price">₹499</p>
+        <p class="discount">40% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 11. Yoga Mat -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/yoga-mat.jpg" alt="yoga-mat.jpg" width="100" height ="100">
+        </div>
+        <h3>Yoga Mat</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.4</p>
+        <p class="price">₹699</p>
+        <p class="old-price">₹1,199</p>
+        <p class="discount">42% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- 12. Badminton Set -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/badminton.webp" alt="badminton.webp" width="100" height ="100">
+        </div>
+        <h3>Badminton Set</h3>
+        <p class="rating">⭐⭐⭐⭐☆ 4.5</p>
+        <p class="price">₹999</p>
+        <p class="old-price">₹1,599</p>
+        <p class="discount">38% off</p>
+        <button class="add-cart">Add to Cart</button>
+    </div> <!-- product-grid -->
+
+   </section> <!-- products-section -->
+
+</div>   
+</body>
+</html>
